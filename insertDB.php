@@ -12,7 +12,7 @@ if(isset($_POST["insert"]))
     $sqlstr = "insert into photo(dID,img) values('$dID','$file')";
 
     if(mysqli_query($conn, $sqlstr)){
-        echo '<script>alert("img inserted into Database!")</script>';
+        echo '<script>alert("img inserted into Database!");location.href="insert.php"</script>';
     }
 }
 
