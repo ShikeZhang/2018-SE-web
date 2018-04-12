@@ -1,34 +1,36 @@
- <?php
- $servername = "127.0.0.1";
- $username = "root";
- $password = "123456";
- $dbname = "m34DB";
+<?php
+$servername = "127.0.0.1";
+$username = "root";
+$password = "123456";
+$dbname = "m34DB";
 
- // Create connection
- $conn = new mysqli($servername, $username, $password, $dbname);
+// Create connection
+$conn = new mysqli($servername, $username, $password, $dbname);
 
- // Check connection
- if ($conn->connect_error) {
-     die("Connection failed: " . $conn->connect_error);
- }
- echo "Connected successfully";
- $dID = $_GET['dID'];
+// Check connection
+if ($conn->connect_error) {
+    die("Connection failed: " . $conn->connect_error);
+}
+echo "Connected successfully";
 
- $sql = "SELECT img FROM photo where dID = '$dID'" ;
+$dID = $_GET['dID'];
 
- $result = $conn->query($sql);
+$sql = "SELECT * FROM photo where dID = '$dID'" ;
 
- //header("Content-type: image/jpeg");
+$result = $conn->query($sql);
 
- if ($result->num_rows > 0) {
-     // output data of each row
-     while($row = $result->fetch_assoc()) {
-         echo '<img src="data:image/jpeg;base64,'.base64_encode($row) .'" />';
-     }
- } else {
-     echo "No photos";
- }
- 
- $conn->close();
+//header("Content-type: image/jpeg");
+
+if ($result->num_rows > 0) {
+    // output data of each row
+    while($row = $result->fetch_assoc()) {
+        echo '<br \>';
+        echo '<img src="data:image/jpeg;base64,'.base64_encode($row['img']).'" width="142" height="132"/>';
+    }
+} else {
+    echo "No photos";
+}
+
+$conn->close();
 
 
