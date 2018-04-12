@@ -3,25 +3,33 @@
 
 <head>
     <meta charset="utf-8" />
-    <title>欢迎登陆!</title>
-    <link rel="stylesheet" href="index.css" type="text/css" />
+    <title>请删除信息!</title>
+    <link rel="stylesheet" href="query.css" type="text/css" />
 </head>
 
 <ul>
-    <li><a href="query.php">查询</a></li>
-    <li><a href="insert.php">插入</a></li>
-    <li><a href="delete.php">删除</a></li>
-    <li><a href="login.php">退出</a></li>
+    <li><a href="query.php">查询</a ></li>
+    <li><a href="insert.php">插入</a ></li>
+    <li><a href=" ">删除</a ></li>
+    <li><a href="login.php">退出</a ></li>
 </ul>
 
-
-<body background="1.jpg">
+<body background="picture1.jpg">
 <div id="myDiv" >
-    <form action="deleteDB.php" method="get">
-        <br />
-        dossierID <input type="text" name="dID_delete">
-        <input type="submit" value="提交">
+    <h1 align="center"> 请输入用户ID </h1>
+    <form action=deleteDB.php" method="get">
+        <div id="dossierid">
+            <p align=" center">
+                <span>dossierID:</span>
+                <input type="text" name="dID">
+            </p>
+        </div>
+        <div id = "submit">
+            <p align = "center"><input type="submit" name="insert" id="insert" value="提交"></p>
+        </div>
     </form>
+
+
 </div>
 
 </body>

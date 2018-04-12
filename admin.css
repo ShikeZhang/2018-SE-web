@@ -1,0 +1,23 @@
+#check {
+    position: relative;
+    width: 300px;
+    height: 30px;
+    margin: auto auto auto auto;
+    margin-top: 100px;
+    /*float: left;*/
+}
+
+#myDiv {
+    top: 120px;
+    position: relative;
+    margin: auto auto auto auto;/*居中效果*/
+    /*background-color: darkgray;*/
+    background-color: transparent;
+    width: 600px;
+    height: 700px;
+}
+
+#search,#delete,#insert,#login{
+    font-size: 20pt;
+    color : #ff0000;
+}

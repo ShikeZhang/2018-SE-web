@@ -14,17 +14,15 @@ if ($conn->connect_error) {
 echo "Connected successfully";
 $dID = $_GET['dID_delete'];
 
-$sql = "delete from photo where dID = '$dID'" ;
+$sql = "delete FROM CA where ID = '$dID'" ;
 
 $result = $conn->query($sql);
 
-$sql2 = "select * from photo where dID = '$dID'" ;
-
-$result2 = $conn->query($sql2);
-
-
-if ($result2->num_rows > 0) {
-    echo "DELETE FAILED";
+if ($result->num_rows > 0) {
+    // output data of each row
+    while($row = $result->fetch_assoc()) {
+        echo "<br>". "id: " . $row["phone_number"]. " - phone_number: " . $row["ID"]. "ID" . "<br>";
+    }
 } else {
     echo "DELETE SUCCEED";
 }

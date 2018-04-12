@@ -304,9 +304,9 @@ function submit() { //对提交按钮进行设置
 	var repassword = document.getElementById("repassword");
 	var mailbox = document.getElementById("mailbox");
 	var phone = document.getElementById("phone");
-	var vercode = document.getElementById("vercode");
+	// var vercode = document.getElementById("vercode");
 	submit.onclick = function() {
-		if(usernamenum && passwordnum && repasswordnum && mailboxnum && phonenum && vercodenum) { //如果各项内容都填写正确，写入cookie
+		if(usernamenum && passwordnum && repasswordnum && mailboxnum && phonenum) { //如果各项内容都填写正确，写入cookie
 			var date = new Date(); //新建一个时间类
 			date.setDate(date.getDate() + 30); //设置时间 为 当前日期加上30天
 			var tempCookie = "";
@@ -366,9 +366,9 @@ function submit() { //对提交按钮进行设置
 			if(!phonenum) {
 				phone.onfocus();
 			}
-			if(!vercodenum) {
-				vercode.onfocus();
-			}
+			// if(!vercodenum) {
+			// 	vercode.onfocus();
+			// }
 			alert("请确认信息填写正确！");
 			return false;
 		}
@@ -382,7 +382,7 @@ window.onload = function() {
 	mailbox();
 	mailbox();
 	phone();
-	vercode();
+	// vercode();
 	submit();
 	//var Username = document.getElementById("username");
 	//Username.focus();

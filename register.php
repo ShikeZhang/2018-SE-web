@@ -7,11 +7,11 @@
     <link rel="stylesheet" href="register.css" type="text/css" />
 </head>
 
-<body background="1.jpg">
+<body background="picture1.jpg">
 <div id="myDiv" >
     <nav id="myNav">
-        <div id="login"><p><a href="login.php">登录</a></p></div>
-        <div id="register"><p>注册</p></div>
+        <div id="login"><p><a href="login.php">管理员登录</a></p></div>
+        <div id="register"><p>用户注册</p></div>
     </nav>
     <form id="myForm">
         <div id="div1"></div>
@@ -45,11 +45,11 @@
             <span class="spanStyle" id="phoneSpan">*</span>
         </div>
 
-        <div id="vercodeDiv">
-            <span class="s">验证码：</span>
-            <input type="text" id="vercode" placeholder="请输入验证码" />
-            <span class="spanStyle" id="vercodeSpan">*</span>
-        </div>
+<!--        <div id="vercodeDiv">-->
+<!--            <span class="s">验证码：</span>-->
+<!--            <input type="text" id="vercode" placeholder="请输入验证码" />-->
+<!--            <span class="spanStyle" id="vercodeSpan">*</span>-->
+<!--        </div>-->
 
         <div id="submitDiv">
             <input id="submit" type="submit" value="提交注册" />

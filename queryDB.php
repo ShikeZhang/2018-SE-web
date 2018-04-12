@@ -12,10 +12,9 @@
      die("Connection failed: " . $conn->connect_error);
  }
  echo "Connected successfully";
-
  $dID = $_GET['dID'];
 
- $sql = "SELECT * FROM photo where dID = '$dID'" ;
+ $sql = "SELECT img FROM photo where dID = '$dID'" ;
 
  $result = $conn->query($sql);
 
@@ -24,8 +23,7 @@
  if ($result->num_rows > 0) {
      // output data of each row
      while($row = $result->fetch_assoc()) {
-         echo '<br \>';
-         echo '<img src="data:image/jpeg;base64,'.base64_encode($row['img']).'" width="142" height="132"/>';
+         echo '<img src="data:image/jpeg;base64,'.base64_encode($row) .'" />';
      }
  } else {
      echo "No photos";

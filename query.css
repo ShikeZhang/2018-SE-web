@@ -1,0 +1,58 @@
+#myDiv {
+    top: 120px;
+    position: relative;
+    margin: auto auto auto auto;/*居中效果*/
+    /*background-color: darkgray;*/
+    background-color: transparent;
+    width: 600px;
+    height: 700px;
+}
+#dossierid{
+    font-family: "微软雅黑";
+    font-size: larger;
+    color: #000000;
+    top: 40px;
+    position: relative;
+    margin: auto auto auto auto;/*居中效果*/
+    background-color: transparent;
+    width: 400px;
+    height: 50px;
+}
+
+#submit {
+    margin-top: 100px;
+}
+/*对提交按钮div的距离设置*/
+#submit input {
+    font-family:  "微软雅黑";
+    font-size: large;
+    font-style: bold;
+    color: black;
+    background-color: aliceblue;
+    width: 100px;
+    height: 50px;
+}
+/*对提交按钮div的具体设置*/
+
+#insert {
+    border: none;
+    display: block;
+}
+#insert:hover {
+    background-color: black;
+    font-size: larger;
+    font-style: bold;
+    text-decoration: underline;
+    color: white;
+}
+
+li {
+    float: left;
+    margin: auto auto auto auto;/*居中效果*/
+    text-align: center;
+    color: #ffe2f5;
+    list-style: none;
+    width: 100px;
+    height: 20px;
+    position: relative;
+}

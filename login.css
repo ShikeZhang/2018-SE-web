@@ -12,20 +12,20 @@ a {
 #login {
 	float: left;
 	height: 50px;
-	width: 75px;
+	width: 120px;
 	background-color: transparent;
 }
 #register {
 	float: left;
 	height: 50px;
-	width: 75px;
-	background-color: gainsboro;
+	width: 120px;
+	background-color: transparent;
 }
 /*设置登录注册的div总样式*/
 #login p {
 	font-family: "微软雅黑";
-	font-style: italic;
-	text-decoration: underline;
+	/*font-style: italic;*/
+	/*text-decoration: underline;*/
 	font-size: larger;
 	color: #FF0000;
 	position: relative;
@@ -35,7 +35,7 @@ a {
 
 #register p {
 	font-family: "微软雅黑";
-	font-size: large;
+	font-size: larger;
 	position: relative;
 	top: -8px;
 	left: 15px;
@@ -46,7 +46,7 @@ a {
 	color: #FF0000;
 }
 #register:hover {
-	background-color: cornsilk;
+	background-color: #ffe2f5;
 }
 /*添加浮动效果，可用js代替*/
 
@@ -75,8 +75,8 @@ a {
 	position: relative;
 	margin: auto auto auto auto;
 	top: 3.5em;
-	background-color: #CCCCCC;
-	width: 150px;
+	background-color: transparent;
+	width: 240px;
 	height: 50px;
 }
 
