@@ -14,19 +14,28 @@ if ($conn->connect_error) {
 echo "Connected successfully";
 $dID = $_GET['dID_delete'];
 
-$sql = "delete from photo where dID = '$dID'" ;
-
+$sql = "delete from Dossier where dossierId = '$dID'" ;
 $result = $conn->query($sql);
 
-$sql2 = "select * from photo where dID = '$dID'" ;
-
+$sql2 = "delete from FaceRecord where assignedDossierId = '$dID'";
 $result2 = $conn->query($sql2);
 
 
-if ($result2->num_rows > 0) {
+
+$sqlTest2 = "select * from FaceRecord where dID = '$dID'";
+
+
+$sqlTest1 = "select * from Dossier where dID = '$dID'" ;
+$resultTest1 = $conn->query($sqlTest1);
+$resultTest2 = $conn->query($sqlTest2);
+
+
+if ($resultTest1->num_rows > 0 or $resultTest2->num_rows >0) {
     echo "DELETE FAILED";
+    echo '<script>location.href ="delete.php"</script>' ;
 } else {
     echo "DELETE SUCCEED";
+    echo '<script>location.href ="delete.php"</script>' ;
 }
 
 $conn->close();

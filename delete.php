@@ -10,18 +10,19 @@
 <ul>
     <li><a href="query.php">查询</a ></li>
     <li><a href="insert.php">插入</a ></li>
-    <li><a href=" ">删除</a ></li>
+    <li><a href="delete.php">删除</a ></li>
+    <li><a href="update.php">更新</a ></li>
     <li><a href="login.php">退出</a ></li>
 </ul>
 
 <body background="picture1.jpg">
 <div id="myDiv" >
-    <h1 align="center"> 请输入用户ID </h1>
-    <form action=deleteDB.php" method="get">
+    <h1 align="center"> 请输入要删除的用户ID </h1>
+    <form action="deleteDB.php" method="get">
         <div id="dossierid">
             <p align=" center">
                 <span>dossierID:</span>
-                <input type="text" name="dID">
+                <input type="text" name="dID_delete">
             </p>
         </div>
         <div id = "submit">

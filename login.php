@@ -30,8 +30,8 @@
         </div>
 
         <div id="submitDiv">
-            <input type="submit" id="user" name="user" value="管理员登陆" />
-            <input type="submit" id="anyone" name="anyone" value="用户登陆"/>
+            <input type="submit" id="user" name="user" value="管理员登陆" style="width: 160px" />
+            <input type="submit" id="anyone" name="anyone" value="用户登陆" style="width: 160px"/>
         </div>
     </form>
 </div>

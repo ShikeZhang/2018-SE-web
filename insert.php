@@ -12,19 +12,25 @@
 
 <ul>
     <li><a href="query.php">查询</a ></li>
-    <li><a href=" ">插入</a ></li>
+    <li><a href="insert.php">插入</a ></li>
     <li><a href="delete.php">删除</a ></li>
+    <li><a href="update.php">更新</a ></li>
     <li><a href="login.php">退出</a ></li>
 </ul>
 
 <body background="picture1.jpg">
 <div id="content">
-<h1 align="center"> 请输入用户ID和图片 </h1>
+<h1 align="center"> 请输入插入的用户ID，名字和身份图片 </h1>
 <form name="form1" action="insertDB.php" method="post" enctype="multipart/form-data">
     <div id = "dossierid">
         <P align = "center">
             <span class="s">dossierID：</span>
             <input type="text" name="dID_insert"></P>
+    </div>
+    <div id ="dossierid">
+        <p align = "center">
+            <span class="s">名字</span>
+            <input type="text" id = "uname" name="uname"></p>
     </div>
     <div id ="imageDiv">
         <p align = "center">

@@ -44,7 +44,7 @@ if(isset($_POST["anyone"]))
 
     $sqlstr = "select * from users where userID='$username' and password='$pw'";
 
-    $result = $conn->query($sql);
+    $result = $conn->query($sqlstr);
 
     if ($result->num_rows > 0) {
         echo '<script>alert("Login Succeed!");location.href="query_user.php"</script>';

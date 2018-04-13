@@ -1,0 +1,272 @@
+/* CSS reset */
+body{background:url(../images/top.jpg) repeat-x top #f6f6ee;}
+body, input, textarea, select {
+    font-size: 12px;
+    color: #333;
+    font-family: 微软雅黑,Arial, Helvetica, sans-serif;
+}
+body, h1, h2, h3, h4, p, ul, ol, input, form, dd {
+    margin: 0;
+}
+ul, ol, input, dt, dd {
+    padding: 0;
+    list-style-type: none;
+}
+input::-moz-focus-inner {
+    border: 0;
+    padding: 0;
+}/*针对Firefox私有属性*
+
+/*image with no-border*/
+a img {
+    border: none;
+}
+a {
+    color:#000;
+    text-decoration: none;
+}
+a:hover {
+    color: #09F;
+    cursor: pointer;
+}
+input {
+    border: 0;
+}
+h1, h2, h3 {
+    font-size:14px;
+}
+#index{width:1000px;margin:0 auto;}
+.banner{height:177px;position:relative;}
+.search_box{width:190px;height:25px;background:#8e0e0e;position:absolute;top:54px;right:0;z-index:100;}
+.s_input{width:155px;height:25px;color:#ffffff;line-height:25px;float:left;
+    background:#8e0e0e;}
+.s_btn{width:34px;height:25px;float:right;display:block;background:url(../images/s_btn.jpg) no-repeat}
+
+
+
+
+.nav .nav1{background:url(../images/navLIh.png) no-repeat center center;color:#9a1b1b;}
+
+.nav  .nav_last{background:none;}
+
+
+
+
+
+.nav{height:54px;}
+.nav li{width:100px;float:left;text-align:center;position:relative;height:54px;}
+.nav li a{width:100px;color:#fff;line-height:48px;display:block;background:url(../images/navli.jpg) no-repeat 0% 60%;font-size:16px;position:absolute;top:0;left:0;z-index:100;width:100px;height:54px;}
+
+
+/*------------交大欢迎你——下拉框样式如下-------------*/
+.nav_B1{width:869px;height:214px;background:url(../images/level_box1.png) no-repeat;padding:10px 30px 30px 30px;}
+.nav .level_box{left:-270px;top:54px;position:absolute;z-index:50;}
+.nav .level_box li{float:none;}
+.nav .level_box .wel1{width:175px;float:left;background:url(../images/wel1Bg.png) no-repeat right 5%;height:202px;margin-right:7px;}
+.nav .level_box .wel1 a{font-size:12px;color:#333333;line-height:40px;background:url(../images/line2.png) repeat-x bottom;height:40px;width:143px;}
+.nav .level_box .wel1 li{height:40px;float:none;}
+
+
+.nav .level_box  .wel2{padding-top:14px;width:319px;float:left;margin-right:30px;height:190px;}
+.tec1_2{background:url(../images/tec1_2.png) no-repeat;width:208px;height:174px;text-align:left;padding:0px 10px;}
+.tec1_2 h1{line-height:36px;}
+.tec1_2  p{line-height:20px;}
+
+.nav .level_box .wel3{width:333px;float:left;padding-top:14px;background:url(../images/wel1Bg.png) no-repeat left 5%;overflow:hidden;height:190px;}
+
+/*-----------历年分数——浮出框样式如下-------------*/
+.past_Scores{width:491px;height:195px;background:url(../images/past_Scores.png) no-repeat;padding-top:30px;}
+.sco_tab{width:342px;height:170px;margin:0 auto;border:1px solid #dad9d9;}
+.sco_title{height:30px;line-height:30px;background:#dad9d9;text-align:center;}
+.select{width:90px;height:26px;border:1px solid #a9a9a9;}
+.nav .a_btn{width:64px;height:27px;background:url(../images/a_btn.png) no-repeat;line-height:27px;color:#404040;display:block;position:static;text-align:center;}
+
+/*-----------院系专业——浮出框样式如下-------------*/
+.Faculty_Pro{width:auto;height:auto;background:url(../images/Faculty_Pro.png) no-repeat;padding-top:20px;text-align:left;}
+.nav .Faculty_Pro a{width:150px;color:#404040;position:static;height:24px;line-height:24px;font-size:12px;background:url(../images/Faculty_ProLi.png) no-repeat left center;padding-left:15px;}
+
+
+/*-----------在线报名——浮出框样式如下-------------*/
+.online_Reg{width:auto;height:auto;background:url(../images/online_Reg.png) no-repeat;padding-top:52px;}
+.red_reg{width:302px;height:64px;background:#bf392d;border:4px solid #fff;margin:0 auto;margin-bottom:6px;font-size:14px;text-align:left;font-weight:bold;}
+.nav  .red_reg a{color:#fff;position:static;background:none;line-height:20px;height:20px;float:right;}
+.nav  .red_reg p{color:#fff;}
+
+
+/*-----------招生动态——浮出框样式如下-------------*/
+
+.ZSDY{width:753px;height:254px;background:url(../images/Faculty_Pro.png) no-repeat;padding-top:30px;text-align:left;}
+.nav  .ZSDY li{height:30px;line-height:30px;width:auto;font-size:12px;text-align:left;}
+.nav  .ZSDY li span{float:right;}
+.nav  .ZSDY li a{position:static;background:none;width:auto;display:inline;height:auto;line-height:30px;color:#393939;font-size:12px;}
+.ZSDY .z_left{width:322px;height:202px;}
+.nav  .ZSDY li em{margin-left:8px;}
+.select2{height:24px;line-height:24px;color:#404040;border:1px solid #a9a9a9;text-align:left;}
+
+
+.sco_tab1{width:495px;height:180px;margin:0 auto;border:1px solid #dad9d9;}
+
+
+/*-----------招生计划——浮出框样式如下-------------*/
+
+.ZS_plan{width:575px;height:254px;background:url(../images/zsjh.png) no-repeat;padding-top:30px;text-align:left;}
+
+
+/*-----------招生政策——浮出框样式如下-------------*/
+.adm_policy{width:753px;height:304px;background:url(../images/Faculty_Pro.png) no-repeat;padding-top:20px;text-align:left;}
+.adm_policy h1{height:38px;line-height:38px;text-align:left;}
+.adm_policy p{line-height:22px;}
+
+
+
+
+
+.slider{height:490px;background:#ffffff;padding-top:13px;position:relative;}
+.s_pic{width:972px;height:490px;margin:0 auto;}
+
+.slider_ul{height:66px;line-height:66px;position:absolute;z-index:30;top:15px;right:30px;}
+.slider_ul a{margin-left:12px;}
+.line{background:url(../images/line.jpg) repeat-x;height:15px;}
+.slider_word{width:463px;height:109px;position:absolute;z-index:100;bottom:30px;right:13px;background:url(../images/slider_word.png) no-repeat;}
+.s_w{height:53px;line-height:53px;text-indent:30px;color:#fff;}
+
+
+
+.right1_news{height:auto!important;min-height:530px;height:530px;}
+.right1{padding:15px 36px 0px 36px;}
+.right1_news li{height:42px;line-height:42px;background:url(../images/right1_newsBg.jpg) no-repeat left center;padding-left:22px;font-size:14px;}
+.right1_news li span{float:right;color:#575654;}
+.right1_news li a{color:#575654;}
+.td_right{background:url(../images/red_rightBG.jpg) repeat-x bottom;}
+.more{font-size:14px;text-align:right;margin-top:10px;}
+.more a{color:#575654;}
+#bottom p{height:22px;line-height:22px;color:#fff;}
+#bottom  a{color:#fff;}
+
+
+
+
+
+
+.levelS{height:auto;overflow:hidden;margin-bottom:15px;}
+.levelC{float:left;height:265px;}
+.level1{width:333px;border-right:1px solid #ffffff;background:#efd46b;}
+.level_color{height:132px;font-size:36px;color:#ffffff;line-height:132px;text-align:left;}
+.level_line{height:1px;background:#ffffff;}
+.level_pic img{height:132px;display:block;}
+
+.level2 .level_color{background:#79bb81;text-align:right;}
+.level2{width:333px;border-right:1px solid #ffffff;background:#79bb81;}
+
+.level3{width:332px;background:#227ca9;}
+.level3 .level_color{text-align:right;}
+
+.click{width:32px;height:34px;display:block;background:url(../images/click.png) no-repeat;position:absolute;z-index:50;}
+
+#level_click .level_color{height:158px;}
+#level_click .level_pic{display:none;}
+#level_click .level_line{display:none;}
+
+
+.click_B{background:#434343;height:132px;position:relative;}
+
+.red_bar{height:590px;background:url(../images/red.jpg) repeat-y;width:332px;}
+.red_bar ul li{height:97px;background:url(../images/red_line.jpg) no-repeat center bottom ;}
+.red_bar ul li a{display:block;}
+.red_H{background:url(../images/whiteSj.png) no-repeat right center;}
+
+#bottom{background:#3e3633;height:222px;text-align:left;}
+
+.b1{background:#7f92a4;height:102px;overflow:hidden;}
+.b2{}
+.b3{height:182px;width:275px;overflow:hidden;}
+.b4{background:#a1ac67;}
+.b5{background:#ab927f;}
+#second table td{vertical-align:top;overflow:hidden;}
+#second table td img{display:block;}
+
+.b_hover{margin-top:-56px;height:56px;line-height:56px;text-indent:34px;background:#6d3c2f;opacity:0.7;-moz-opacity:0.7;-webkit-opacity:0.7;-khtml-opacity:0.7;filter:alpha(opacity=70);-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";}
+.b_hover a{font-size:24px;color:#fff;}
+
+
+
+
+.pro_list li a{display:block;height:36px;line-height:36px;background:url(../images/right1_newsBg.jpg) no-repeat left center;padding-left:15px;}
+
+.contact{width:580px;height:166px;border-bottom:1px dashed #a9a9a9;font-size:14px;margin-bottom:20px;}
+.contact h1{height:34px;line-height:34px;color:#720808;font-weight:bold;}
+.contact p{line-height:24px;}
+
+
+
+/*新增*/
+.yx_p1{
+    font-size:24px;
+    line-height:50px;
+    border-bottom:1px solid #d2d2d2;}
+.yx_p2{
+    border-top:6px solid #8a0707;
+    padding-bottom:15px;}
+.yx_p2 img{
+    width:100%;}
+.yx_p3{
+    border-bottom:1px solid #e4e4e4;}
+.yx_p3 a{
+    color:#002e96;
+    line-height:40px;
+}
+.yx_d{
+    width:100%;
+    height:auto !important;
+    min-height:300px;
+    height:300px;
+
+}
+.yx_d1{
+    line-height:40px;
+    font-size:13px;
+    font-weight:bold;}
+.yx_t{
+    margin-top:3px;}
+.yx_t td{
+    height:30px;
+    background:#e9e9e9;
+    line-height:25px;
+    padding:5px 16px;}
+.yx_t1{
+    text-align:right;
+    font-size:20px;
+    font-weight:bold;}
+.yx_t1 a{
+    color:#ababae;}
+.yx_t2{
+    background:#cccccc !important; font-weight:bold;}
+.yx_t3{
+    background:#f6f6f6 !important;
+    border-bottom:1px solid #e4e4e4;}
+.yx_t3 a{
+    color:#4f80a0;}
+.yx_t4{
+    background:url(../images/pic_xz.jpg) no-repeat left; padding-left:15px; color:#67004c; font-weight:bold;}
+.yx_t5{
+    background:#f6f6f6 !important;	 color:#67004c; font-weight:bold;
+}
+.yx_t6{
+    background:#f6f6f6 !important;	 color:#67004c; font-weight:bold; text-align:right;
+}
+.yx_t6 a{
+    color:#67004c; font-weight:bold;}
+.yx_t7{
+    background:#e9e9e9 !important; font-weight:bold;}
+.yx_t8{
+    background:#f6f6f6 !important;
+}
+.yx_t8 p{
+    background:url(../images/pic_xz.jpg) no-repeat left; padding-left:15px; }
+.yx_t9{
+    background:#f6f6f6 !important;	 color:#67004c; font-weight:bold; text-indent:15px;
+}
+.yx_t9 a{
+    color:#67004c; font-weight:bold;}
+
+

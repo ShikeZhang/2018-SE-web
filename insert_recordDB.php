@@ -15,13 +15,15 @@ echo "Connect success";
 
 if(isset($_POST["insert"]))
 {
-    $dID = $_POST['dID_insert'];
-    $name = $_POST['uname'];
+    $rID = $_POST['rID'];
+    $time = $_POST['time'];
+    $camera = $_POST['camera'];
+    $dIDd = $_POST['dIDd'];
     $file = addslashes(file_get_contents($_FILES["image"]["tmp_name"]));
-    $sqlstr = "insert into Dossier(dossierId,aName,identityPicture) values('$dID', '$name', '$file')";
+    $sqlstr = "insert into FaceRecord(recordId, aTimestamp, cameraId, assignedDossierId,picture) values('$rID', '$time', '$camera', '$dIDd' ,'$file')";
 
     if(mysqli_query($conn, $sqlstr)){
-        echo '<script>alert("img inserted into Database!");location.href="insert.php"</script>';
+        echo '<script>alert("img inserted into Database!");location.href="insert_record.php"</script>';
     }
 }
 

@@ -19,7 +19,7 @@
 	font-family: "微软雅黑";
 }
 table {
-	margin: auto;
+	/*margin: auto;*/
 	border: 1px solid #669999;
 }
 caption {
@@ -77,4 +77,8 @@ li {
 a {
 	color: #99CCCC;
 	text-decoration: none;
+}
+
+img{
+	border-radius: 8px;
 }
