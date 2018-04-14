@@ -2,50 +2,39 @@
 <html>
 
 <head>
-    <meta charset="UTF-8">
-    <title>Hello World!</title>
-    <link href="index.css" rel="stylesheet" />
+    <meta charset="utf-8" />
+    <title>欢迎登陆!</title>
+    <link rel="stylesheet" href="login.css" type="text/css" />
 </head>
-<body background="2.jpg">
-<ul>
-    <li><a href="login.php">返回登录</a></li>
-    <li><a href="register.php">返回注册</a></li>
-</ul>
-<script type="text/javascript" src="index.js"></script>
 
+<body background="picture1.jpg">
+<div id="myDiv" >
+    <nav id="myNav">
+        <div id="login">
+            <p>管理员登录</p>
+        </div>
+        <div id="register"><p><a href="register.php">用户注册</a></p></div>
+    </nav>
+    <form id="myForm" action="loginDB.php" method="post" enctype="multipart/form-data">
+        <div id="div1"></div>
+        <div id="usernameDiv">
+            <span class="s">账号：</span>
+            <input type="text" id="username" name="username" placeholder="请输入账号" />
+            <span class="spanStyle" id="usernameSpan">*</span>
+        </div>
 
-<?php
-$servername = "127.0.0.1";
-$username = "root";
-$password = "123456";
-$dbname = "m34DB";
+        <div id="passwordDiv">
+            <span class="s">密码：</span>
+            <input type="text" id="password" name="password" placeholder="请输入密码" />
+            <span class="spanStyle" id="passwordSpan">*</span>
+        </div>
 
-// Create connection
-$conn = new mysqli($servername, $username, $password, $dbname);
-
-// Check connection
-if ($conn->connect_error) {
-    die("Connection failed: " . $conn->connect_error);
-}
-echo "Connected successfully";
-
-$sql = "SELECT * FROM CA";
-$result = $conn->query($sql);
-
-if ($result->num_rows > 0) {
-    // output data of each row
-    while($row = $result->fetch_assoc()) {
-        echo "<br>". "id: " . $row["phoneNum"]. " - phone_number: " . $row["ID"]. "ID" . "<br>";
-    }
-} else {
-    echo "0 results";
-}
-$conn->close();
-?>
-
-
-
-
+        <div id="submitDiv">
+            <input type="submit" id="user" name="user" value="管理员登陆" style="width: 160px" />
+            <input type="submit" id="anyone" name="anyone" value="用户登陆" style="width: 160px"/>
+        </div>
+    </form>
+</div>
+<!--<script type="text/javascript" src="login.js"></script>-->
 </body>
-
 </html>

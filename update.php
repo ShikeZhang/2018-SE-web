@@ -11,6 +11,7 @@
 </head>
 
 <ul>
+    <li><a href="admin2.php">显示所有</a ></li>
     <li><a href="query.php">查询</a ></li>
     <li><a href="insert.php">插入</a ></li>
     <li><a href="delete.php">删除</a ></li>

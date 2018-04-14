@@ -5,9 +5,9 @@
     <meta charset="utf-8"/>
     <title>请查询图片!</title>
     <link rel="stylesheet" href="index.css" type="text/css" />
-<!--    <link rel="stylesheet" href="column.css" type="text/css" />-->
-<!--    <link rel="stylesheet" href="style.css" type="text/css" />-->
-<!--    <link rel="stylesheet" href="agency.min.css" type="text/css" />-->
+    <!--    <link rel="stylesheet" href="column.css" type="text/css" />-->
+    <!--    <link rel="stylesheet" href="style.css" type="text/css" />-->
+    <!--    <link rel="stylesheet" href="agency.min.css" type="text/css" />-->
 </head>
 
 <ul style="height: 30px;font-size: 12pt;">
@@ -92,8 +92,8 @@ if ($result1->num_rows > 0) {
     $camera=array("1","1","1","1");
 
 
-        while ($row = $result1->fetch_assoc()) {
-          if($count<4) {
+    while ($row = $result1->fetch_assoc()) {
+        if($count<4) {
 //            echo '<div style="max-width:25%;">';
             echo '<img src="data:image/jpeg;base64,' . base64_encode($row['picture']) . '" " style="max-width:25%;" />';
 
@@ -102,20 +102,20 @@ if ($result1->num_rows > 0) {
 
             $count = $count + 1;
 //            $rest = $rest-1;
-            }
-          else {
+        }
+        else {
 //              echo "<div style=\"width:500px;margin:0 auto;\">";
-              for($i=0; $i<4; $i++){
-                  echo "<table  border=\'1\' style='max-width:25%;display:inline-table;'>";
-                  echo "<tr><th>Camera</th>";
-                  echo "<td>" . $camera[$i] . "</td></tr>";
-                  echo "<tr><th>Time</th>";
-                  echo "<td>" . $time[$i] . "</td>";
-                  echo "</tr></table>";
-              }
+            for($i=0; $i<4; $i++){
+                echo "<table  border=\'1\' style='max-width:25%;display:inline-table;'>";
+                echo "<tr><th>Camera</th>";
+                echo "<td>" . $camera[$i] . "</td></tr>";
+                echo "<tr><th>Time</th>";
+                echo "<td>" . $time[$i] . "</td>";
+                echo "</tr></table>";
+            }
 //              echo "</div>";
-              $count=0;
-          }
+            $count=0;
+        }
     }
 
     for($j=0; $j<$count; $j++) {
